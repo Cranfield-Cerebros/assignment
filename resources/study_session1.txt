@@ -7,7 +7,20 @@ Definitions:
       
   Turbulence: due to non-linearity of Navier-Stockes equations. Can be calculated but it is computationally expensive, thus emerged the need to model the phenomenon. 
         In the case of our study, we use the RANS model.
-        
+
+  Types of Machine Learning: 
+   	Supervised Learning: Maps an input to an output based on io pairs. It is the most used type of ML. Methods: Classification - Regression - Neural Networks (Probably the one we will be using) 
+	Unsupervised Learning: Only the input is available and the task is to identify and categorize datasets. Methods: Clustering - Association
+	Reinforcement Learning: The goal is to come up with a sequence of actions that form a good policy based on the past sequences.
+  Methodology of a ML implementation:
+	1- Collection of data
+	2- Preprocessing
+	3- Transformation
+	4- Analysis
+	5- Interpretation and Evaluation
+
+   Deep Learning: A type of ML that combines Big Data and Computer Computation. Generally more performant. Methods: Deep Neural Networks (one input, one output, multiple hidden layers)
+
 Problematic:
     The turbulence is quite random and very challenging to compute, therfore, it can be very problematic computationally.
         
@@ -18,7 +31,12 @@ Classic Solution:
 	    - It is purely experimental (probably requires more time and effort and lacks precision?)
 	    - The transition state (from laminar to turbulent) is not taken into account. If it was the case, it would introduce more unknowns and therefore more computational effort
  
- Task: 
+APIs/Software/Libraries:
+    TensoreFlow: an open source for Machine/Deep Learning. Written in Python, C++ and CUDA. One of the most used tools in AI. Can be executed on both GPUs and CPUs (Possible use of OpenMP and CUDA in addition to MPI).
+    Scikit-learn: A free ML library "for Python" and written in Python. (probably not a good idea to use it for its limited performance)
+    Keras: most used Deep Learning API. can be built on top of TensorFlow and therefore work in a cluster environment and use GPUs.
+
+Task: 
     - Use Machine Learning to tune the closure coefficients without having to do it experimentally.
 
 Questions/answers:
