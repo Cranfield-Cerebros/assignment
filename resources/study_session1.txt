@@ -12,6 +12,7 @@ Definitions:
    	Supervised Learning: Maps an input to an output based on io pairs. It is the most used type of ML. Methods: Classification - Regression - Neural Networks (Probably the one we will be using) 
 	Unsupervised Learning: Only the input is available and the task is to identify and categorize datasets. Methods: Clustering - Association
 	Reinforcement Learning: The goal is to come up with a sequence of actions that form a good policy based on the past sequences.
+
   Methodology of a ML implementation:
 	1- Collection of data
 	2- Preprocessing
@@ -32,13 +33,37 @@ Classic Solution:
 	    - The transition state (from laminar to turbulent) is not taken into account. If it was the case, it would introduce more unknowns and therefore more computational effort
  
 APIs/Software/Libraries:
-    TensoreFlow: an open source for Machine/Deep Learning. Written in Python, C++ and CUDA. One of the most used tools in AI. Can be executed on both GPUs and CPUs (Possible use of OpenMP and CUDA in addition to MPI).
+    TensorFlow: an open source for Machine/Deep Learning. Written in Python, C++ and CUDA. One of the most used tools in AI. Can be executed on both GPUs and CPUs (Possible use of OpenMP and CUDA in addition to MPI).
     Scikit-learn: A free ML library "for Python" and written in Python. (probably not a good idea to use it for its limited performance)
     Keras: most used Deep Learning API. can be built on top of TensorFlow and therefore work in a cluster environment and use GPUs.
 
 Task: 
     - Use Machine Learning to tune the closure coefficients without having to do it experimentally.
 
+Documents for future study:
+	Machine learning methods for turbulence modeling in subsonic flows over airfoils [https://arxiv.org/ftp/arxiv/papers/1806/1806.05904.pdf]
+	Introduction to Machine Learning [https://www.researchgate.net/publication/268804320_Introducing_Machine_Learning]
+	Machine Learning for Fluid Mechanics [https://www.researchgate.net/publication/335785608_Machine_Learning_for_Fluid_Mechanics]
+	Machine learning methods for turbulence modeling in subsonic flows around airfoils [https://aip.scitation.org/doi/10.1063/1.5061693]
+	Validation_of_CFD_Turbulence_Models_for [/documents]
+	SciANN_A_Keras_TensorFlow_wrapper_for_scientific_computationsand_physics-informed_deep_learning_usin [/documents]
+	Machine learning methods for turbulence [/documents]
+	Machine Learning for Turbulence Modeling [/documents]
+	A_TensorFlow-based_new_high-performance_computational_framework_for_CFD [/documents]
+
 Questions/answers:
     - Antonin & Marvellous: Would we have enough data to train our model and was it collected accurately (preprocessing step)? 
+    - Dr Jun Li: This is an excellent question: It will be clearer when the data is available. But likely, the data will not be enough at some point for training a model. 
+	Therefore, you have to come up with a solution to cope with this. One method is to generate new data based on the study of its distribution such as using some statistical methods. 
+	Alternatively, one may use the synthetic data generation concept, which often uses machine learning methods such as neural networks - again implicitly simulating the data distribution. 
+	The third way is related to your model itself - to see if it is capable with less datasets. This can be related a neural network architecture design if you use neural networks, 
+	or sampling approach if you use some unsupervised learning as pre-processing for your model. More or less, you have to do pre-processing such as selection of features (e.g. closure of coefficients)
+	and normalization of the model inputs...
+	
+    - Zakariae: Should the solution be only valid for RANS models?
+
+Useful links:
+  Machine Learning for fluid dynamics [https://www.youtube.com/watch?v=8e3OT2K99Kw]
+  Navier-Stokes equations [https://www.youtube.com/watch?v=ERBVFcutl3M]
+
 
