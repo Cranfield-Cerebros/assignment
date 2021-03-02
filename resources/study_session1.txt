@@ -1,6 +1,6 @@
 Date: 02/03/2021
 
-Definitions:
+**Definitions**:
   Navier-Stokes equations: Equations that govern the mechanics of fluids. 2 Equations in total:
 	    Conservation of mass: Gradient of the velocity in a three dimensional space + Newton's second law: Acceleration * Mass = Inner Forces + Outter Forces.
     	The solutions do not always converge due to TURBULENCE. Possible ways of solving it: assumptions (initial conditions), Finite time (or space too maybe?). 
