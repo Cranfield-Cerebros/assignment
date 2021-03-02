@@ -1,0 +1,26 @@
+Date: 02/03/2021
+
+Definitions:
+  Navier-Stokes equations: Equations that govern the mechanics of fluids. 2 Equations in total:
+	    Conservation of mass: Gradient of the velocity in a three dimensional space + Newton's second law: Acceleration * Mass = Inner Forces + Outter Forces.
+    	The solutions do not always converge due to TURBULENCE. Possible ways of solving it: assumptions (initial conditions), Finite time (or space too maybe?). 
+      
+  Turbulence: due to non-linearity of Navier-Stockes equations. Can be calculated but it is computationally expensive, thus emerged the need to model the phenomenon. 
+        In the case of our study, we use the RANS model.
+        
+Problematic:
+    The turbulence is quite random and very challenging to compute, therfore, it can be very problematic computationally.
+        
+Classic Solution:
+    Averaging time: introduces a new stress tensor (RANS model, which stands for Reynolds-Averaged Navier-stokes), consequently more unknowns
+        => the need for experimental correlation or closure coefficients to calculate the unknowns.
+    Constraints: 
+	    - It is purely experimental (probably requires more time and effort and lacks precision?)
+	    - The transition state (from laminar to turbulent) is not taken into account. If it was the case, it would introduce more unknowns and therefore more computational effort
+ 
+ Task: 
+    - Use Machine Learning to tune the closure coefficients without having to do it experimentally.
+
+Questions/answers:
+    - Antonin & Marvellous: Would we have enough data to train our model and was it collected accurately (preprocessing step)? 
+
