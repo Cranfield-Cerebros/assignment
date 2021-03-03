@@ -1,0 +1,90 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2006                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    p
+    {
+        solver           GAMG;
+        smoother         DIC;
+        tolerance        1e-8;
+        relTol           0.01;
+    }
+
+    pFinal
+    {
+        $p;
+        relTol           0;
+    }
+
+    "(U|k|omega|nuTilda|q|zeta|ReThetat|gammaInt|kl|kt)"
+    {
+        solver           PBiCGStab;
+        preconditioner   DILU;
+        tolerance        1e-8;
+        relTol           0.01;
+    }
+
+    "(UFinal|kFinal|omegaFinal|nuTildaFinal|qFinal|ReThetatFinal|gammaIntFinal|klFinal|ktFinal)"
+    {
+        $U;
+        relTol           0;
+    }
+}
+
+"(SIMPLE|PISO)"
+{
+    consistent                 yes;
+    nNonOrthogonalCorrectors   1;
+    pRefCell                   0;
+    pRefValue                  0;
+
+    residualControl
+    {
+        U         1e-05;
+        p         1e-05;
+        k         1e-05;
+        omega     1e-05;
+        nuTilda   1e-05;
+        Rethetat  1e-05;
+        gammaInt  1e-05;
+        kl        1e-05;
+        kt        1e-05;
+    }
+}
+
+relaxationFactors
+{
+    fields
+    {
+        p         0.7;
+    }
+
+    equations
+    {
+        U         0.7;
+        k         0.7;
+        omega     0.7;
+        nuTilda   0.7;
+        ReThetat  0.7;
+        gammaInt  0.7;
+        kl        0.7;
+        kt        0.7;
+    }
+}
+
+// ************************************************************************* //
