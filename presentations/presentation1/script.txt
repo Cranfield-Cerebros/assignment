@@ -9,13 +9,20 @@ Main points:
 		- SkillsMatrices: We make a complement team with potential synergy (go in depth)
 
 	- Solution approach: {Salman}
-		- Tree diagram representing to possible approaches (ML or DL) and proceed with elimination based on feasability
-		- Neural Network with multiple algorithms (Monte Carlo algorithm - Bio-algorithm)
 		- Programming language choice/APIs: 
-			- Python as host language
-			- C++/C for implementing algorithms/Use external libraries (for validation et cetera)
-			- CUDA for Machine Learning (Keras+tensorFlow)
+			- We have chosen Python as host language
+			- and we will use C++/C for implementing algorithms/Use external libraries (for validation et cetera)
+			- we also have plans to use CUDA for Machine Learning (Keras+tensorFlow)
+
+		- Tree diagram representing to possible approaches (ML or DL) and proceed with elimination based on feasability
+				
+			Regression with gradient descent , 
+		- Neural Network with multiple algorithms (Monte Carlo algorithm - Bio-algorithm)
+				We have decided to perceptron model initially .
+				It consists of an input layer, an output layer and a hidden layer.
+		
 		- Visualization of Data (perhaps?)
+				If we finish early we may use visualisation tehcniques to analyse and improve our results
 		
 	- Roles of each member: {Marvellous}
 		- AI (ML/DP): Salman - Zakariae
