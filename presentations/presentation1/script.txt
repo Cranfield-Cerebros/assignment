@@ -17,9 +17,10 @@ Main points:
 		- Tree diagram representing to possible approaches (ML or DL) and proceed with elimination based on feasability
 				
 			Regression with gradient descent , 
-		- Neural Network with multiple algorithms (Monte Carlo algorithm - Bio-algorithm)
-				We have decided to perceptron model initially .
-				It consists of an input layer, an output layer and a hidden layer.
+		- Neural Network with multiple algorithms (Monte Carlo algorithm)
+			-We will be taking advantage of tensorflow and keras libraries
+			-we will be using monte carlo  simulation to generate closure coefficients
+			-We may use perceptron model initially 
 		
 		- Visualization of Data (perhaps?)
 				If we finish early we may use visualisation tehcniques to analyse and improve our results
