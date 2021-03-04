@@ -32,7 +32,7 @@ Main points:
 		- A work plan/planning
 		- Data Collection: (Opencv for extraction from images/ look up the original document online) + Generate more data if necessary
 		- Preprocessing the data (Scikit-learn)
-		- Transformation (Normalization of data)
+		- Transformation (Data transformation is the process of changing the format, structure, or values of data(normalisation))
 		- Analysis (Learning phase)
 		- Interpretation and Evaluation (Validation of the results)
 	
