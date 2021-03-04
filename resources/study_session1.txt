@@ -24,6 +24,7 @@ Definitions:
 
 Problematic:
     The turbulence is quite random and very challenging to compute, therfore, it can be very problematic computationally.
+    The ultimate task of the project is to develop a solution based on ML algorithms that can produce accurate Transition models based on the experimental data we have.
         
 Classic Solution:
     Averaging time: introduces a new stress tensor (RANS model, which stands for Reynolds-Averaged Navier-stokes), consequently more unknowns
@@ -60,7 +61,13 @@ Questions/answers:
 	or sampling approach if you use some unsupervised learning as pre-processing for your model. More or less, you have to do pre-processing such as selection of features (e.g. closure of coefficients)
 	and normalization of the model inputs...
 	
-    - Zakariae: Should the solution be only valid for RANS models?
+    - Zakariae: How to modify the number of meshes? Can we do it using OpenFOAM?
+    - Dr Tom Teschner: it needs to be done by the user (i.e. openfoam does not take care of that) but only if the reynolds number is changed. 
+	If the Reynolds number is the same and only the angle of attack is changing, for example, we can use the same mesh and don't have to change it. 
+	If we change the reynolds number, ten we have to copy the correct mesh into the constant directory. 
+	As a sanity check, after each simulation we can check if the maximum yplus value reported is below 1 
+	(either on the screen or inside the postProcessing/yPlus/ folder after the simulation has finished). If it is above 1, then we have probably used the wrong mesh
+
 
 Useful links:
   Machine Learning for fluid dynamics [https://www.youtube.com/watch?v=8e3OT2K99Kw]
