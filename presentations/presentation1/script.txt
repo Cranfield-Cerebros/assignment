@@ -1,0 +1,38 @@
+Main points:
+	
+	- Intoduction: {Zakariae}
+		- Develop a ML solution able to produce accurate models of Transition using Computational Methods.
+		- Overview on the market analysis (give examples of companies/industries/research)
+
+	- Group formulation:
+		- Compatiblity of personalities: (INTJ) Zakariae, Salman (INTJ), Antonin (ISTJ), Marvellous (ENFJ)
+		- SkillsMatrices: We make a complement team with potential synergy (go in depth)
+
+	- Solution approach: {Salman}
+		- Tree diagram representing to possible approaches (ML or DL) and proceed with elimination based on feasability
+		- Neural Network with multiple algorithms (Monte Carlo algorithm - Bio-algorithm)
+		- Programming language choice/APIs: 
+			- Python as host language
+			- C++/C for implementing algorithms/Use external libraries (for validation et cetera)
+			- CUDA for Machine Learning (Keras+tensorFlow)
+		- Visualization of Data (perhaps?)
+		
+	- Roles of each member: {Marvellous}
+		- AI (ML/DP): Salman - Zakariae
+		- Low-level coding (algorithms): Antonin - Marvellous - Zakariae
+		- Theory related to the problem (mechanics): Salman - Marvellous - Zakariae - Antonin
+		- Documentation (code documentation - reports - State of the art et cetera): Zakariae - Salman - Marvellous
+		- Organization/time management (Agile method/GANT): Salman - Zakariae - Marvellous - Antonin
+		- Communication (with third parties): Zakariae - Marvellous
+		
+	- High-level tasks: {Antonin}
+		- Market analysis: State of the art of the available technologies/paradigms. Might be pertinent to focus on
+			research papers, and probably look up businesses specialized in this area. Financial aspect - Market size
+		- Software Requirements Specifications + UML diagrams 
+		- A work plan/planning
+		- Data Collection: (Opencv for extraction from images/ look up the original document online) + Generate more data if necessary
+		- Preprocessing the data (Scikit-learn)
+		- Transformation (Normalization of data)
+		- Analysis (Learning phase)
+		- Interpretation and Evaluation (Validation of the results)
+	
