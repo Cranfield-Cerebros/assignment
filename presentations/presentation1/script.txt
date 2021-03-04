@@ -9,21 +9,33 @@ Main points:
 		- SkillsMatrices: We make a complement team with potential synergy (go in depth)
 
 	- Solution approach: {Salman}
-		- Programming language choice/APIs: 
-			- We have chosen Python as host language
-			- and we will use C++/C for implementing algorithms/Use external libraries (for validation et cetera)
-			- we also have plans to use CUDA for Machine Learning (Keras+tensorFlow)
+		Programming language choice/APIs: 
+		- We have chosen Python as host language
+		-As it Python is easy to use, powerful, and versatile, and its readability is very good compared to other languages.
+	-Python's high speed for data processing makes it optimal for usage with Big Data
+	-Also python has vast predefined librieries & tools which helps us to perform complex tasks in seconds.
+	- We will use C++/C for implementing algorithms/ we may also employ some external libraries (for validation et cetera)
+	- we also have plans to use CUDA for Machine Learning and optimisation
+	
+	-ML
+		for machine learning part we ll mainly be performing multi variate Regression with gradient descent to converge
+		to solution as Gradient descent is simply used to find the values of a function's parameters (coefficients) that minimize
+		a cost function as far as possible
 
-		- Tree diagram representing to possible approaches (ML or DL) and proceed with elimination based on feasability
-				
-			Regression with gradient descent , 
-		- Neural Network with multiple algorithms (Monte Carlo algorithm)
-			-We will be taking advantage of tensorflow and keras libraries
-			-we will be using monte carlo  simulation to generate closure coefficients
-			-We may use perceptron model initially 
-		
-		- Visualization of Data (perhaps?)
+	- coming to the Neural Network part (Monte Carlo algorithm )
+
+	Based on the outcome of our regression analysis 
+	- We will further be improving upon by use of Neural networks as they work better at predictive analytics because of the hidden layers.
+	 while linear regression models use only input and output nodes to make predictions. Neural network also use the hidden
+	 layer to make predictions more accurate. That's because it 'learns' the way a human does.
+	-We will be taking advantage of tensorflow and keras libraries
+	-we will be using monte carlo  simulation to generate closure coefficients which on of the requirements
+	Based on these results we will train our model till we achive satisfactory result
+	
+	- Visualization of Data (perhaps?)
+				Our aim is to further improve our overall results using machine vision.
 				If we finish early we may use visualisation tehcniques to analyse and improve our results
+
 		
 	- Roles of each member: {Marvellous}
 		- Two team members from SETC, one from CED and CIDA each.
