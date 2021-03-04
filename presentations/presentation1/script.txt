@@ -44,3 +44,13 @@ Main points:
 		- Analysis (Learning phase)
 		- Interpretation and Evaluation (Validation of the results)
 	
+		script:
+			divided the project in phases:
+				1. Prepare the environment we will use: SOA( tools available, regarding code libraries available), list of the specifications
+				2. Work plan (agile method)
+				3. Programming:
+						-data collection (from the pdf) + creation of new datasets (if required)
+						-preprocessing data (maybe Scikit-learn?) 
+						-transformation (process of changing the format, structure, or values of data(normalisation))
+						-analysis (Learning phase)
+						-interpretation and evaluation (Validation of the results)
