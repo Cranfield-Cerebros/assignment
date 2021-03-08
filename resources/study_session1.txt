@@ -42,16 +42,15 @@ Task:
     - Use Machine Learning to tune the closure coefficients without having to do it experimentally.
 
 Documents for future study:
-	Machine learning methods for turbulence modeling in subsonic flows over airfoils [https://arxiv.org/ftp/arxiv/papers/1806/1806.05904.pdf]
-	Introduction to Machine Learning [https://www.researchgate.net/publication/268804320_Introducing_Machine_Learning]
-	Machine Learning for Fluid Mechanics [https://www.researchgate.net/publication/335785608_Machine_Learning_for_Fluid_Mechanics]
-	Machine learning methods for turbulence modeling in subsonic flows around airfoils [https://aip.scitation.org/doi/10.1063/1.5061693]
-	Machine Learning in Computational Fluid Dynamics [https://towardsdatascience.com/machine-learning-in-computational-fluid-dynamics-7018941414b9]
-	Validation_of_CFD_Turbulence_Models_for [/documents]
-	SciANN_A_Keras_TensorFlow_wrapper_for_scientific_computationsand_physics-informed_deep_learning_usin [/documents]
-	Machine learning methods for turbulence [/documents]
-	Machine Learning for Turbulence Modeling [/documents]
-	A_TensorFlow-based_new_high-performance_computational_framework_for_CFD [/documents]
+	1- (Salman) Machine learning methods for turbulence modeling in subsonic flows over airfoils [https://arxiv.org/ftp/arxiv/papers/1806/1806.05904.pdf]
+	3- Introduction to Machine Learning [https://www.researchgate.net/publication/268804320_Introducing_Machine_Learning]
+	2- Machine Learning for Fluid Mechanics [https://www.researchgate.net/publication/335785608_Machine_Learning_for_Fluid_Mechanics]
+	1- (Marvellous) Machine learning methods for turbulence modeling in subsonic flows around airfoils [https://aip.scitation.org/doi/10.1063/1.5061693]
+	2- Validation_of_CFD_Turbulence_Models_for [/documents]
+	3- SciANN_A_Keras_TensorFlow_wrapper_for_scientific_computationsand_physics-informed_deep_learning_usin [/documents]
+	1- (Antonin) Machine learning methods for turbulence [/documents]
+	1- (Zakariae) Machine Learning for Turbulence Modeling [/documents]
+	3- A_TensorFlow-based_new_high-performance_computational_framework_for_CFD [/documents]
 
 Questions/answers:
     - Antonin & Marvellous: Would we have enough data to train our model and was it collected accurately (preprocessing step)? 

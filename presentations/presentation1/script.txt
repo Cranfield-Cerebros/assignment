@@ -15,7 +15,7 @@ Main points:
 			in this area, especially for Turbulence Models. As far as now, the results are promising but still require more research. 
 
 	- Group formulation:
-		- Compatiblity of personalities: (INTJ) Zakariae, Salman (INTJ), Antonin (ISTJ), Marvellous (ENFJ)
+		- Compatiblity of personalities: (INTJ) Zakariae, Salman (ENFP), Antonin (ISTJ), Marvellous (ENFJ)
 		- SkillsMatrices: We make a complement team with potential synergy (go in depth)
 
 		script: - Considering our types of personalities, we thought we would make a good team for multiple reasons:
@@ -41,21 +41,46 @@ Main points:
 	
 
 	- Solution approach: {Salman}
-		- Tree diagram representing to possible approaches (ML or DL) and proceed with elimination based on feasability
-		- Neural Network with multiple algorithms (Monte Carlo algorithm - Bio-algorithm)
-		- Programming language choice/APIs: 
-			- Python as host language
-			- C++/C for implementing algorithms/Use external libraries (for validation et cetera)
-			- CUDA for Machine Learning (Keras+tensorFlow)
-		- Visualization of Data (perhaps?)
+		Programming language choice/APIs: 
+		- We have chosen Python as host language
+		-As it Python is easy to use, powerful, and versatile, and its readability is very good compared to other languages.
+	-Python's high speed for data processing makes it optimal for usage with Big Data
+	-Also python has vast predefined librieries & tools which helps us to perform complex tasks in seconds.
+	- We will use C++/C for implementing algorithms/ we may also employ some external libraries (for validation et cetera)
+	- we also have plans to use CUDA for Machine Learning and optimisation
+	
+	-ML
+		for machine learning part we ll mainly be performing multi variate Regression with gradient descent to converge
+		to solution as Gradient descent is simply used to find the values of a function's parameters (coefficients) that minimize
+		a cost function as far as possible
+
+	- coming to the Neural Network part (Monte Carlo algorithm )
+
+	Based on the outcome of our regression analysis 
+	- We will further be improving upon by use of Neural networks as they work better at predictive analytics because of the hidden layers.
+	 while linear regression models use only input and output nodes to make predictions. Neural network also use the hidden
+	 layer to make predictions more accurate. That's because it 'learns' the way a human does.
+	-We will be taking advantage of tensorflow and keras libraries
+	-we will be using monte carlo  simulation to generate closure coefficients which on of the requirements
+	Based on these results we will train our model till we achive satisfactory result
+	
+	- Visualization of Data (perhaps?)
+				Our aim is to further improve our overall results using machine vision.
+				If we finish early we may use visualisation tehcniques to analyse and improve our results
+
 		
 	- Roles of each member: {Marvellous}
-		- AI (ML/DP): Salman - Zakariae
-		- Low-level coding (algorithms): Antonin - Marvellous - Zakariae
-		- Theory related to the problem (mechanics): Salman - Marvellous - Zakariae - Antonin
-		- Documentation (code documentation - reports - State of the art et cetera): Zakariae - Salman - Marvellous
-		- Organization/time management (Agile method/GANT): Salman - Zakariae - Marvellous - Antonin
-		- Communication (with third parties): Zakariae - Marvellous
+		- Two team members from SETC, one from CED and CIDA each.
+		- There are technical and non-technical roles
+		- Technical roles were chosen based on background, expertise and current option
+			- AI (ML/DP): Salman - Zakariae
+			- Low-level coding (algorithms): Antonin - Marvellous - Zakariae
+			- Theory related to the problem (mechanics): Salman - Marvellous - Zakariae - Antonin
+			- Documentation (code documentation - reports - State of the art et cetera): Zakariae - Salman - Marvellous
+		- Non-technical roles were shared according to personality types
+			- Organization/time management (Agile method/GANT): Salman - Zakariae - Marvellous - Antonin
+			- Communication (with third parties): Zakariae - Marvellous
+		- We would all work together irrespective of individual responsibilities.
 		
 	- High-level tasks: {Antonin}
 		- Market analysis: State of the art of the available technologies/paradigms. Might be pertinent to focus on
@@ -64,7 +89,17 @@ Main points:
 		- A work plan/planning
 		- Data Collection: (Opencv for extraction from images/ look up the original document online) + Generate more data if necessary
 		- Preprocessing the data (Scikit-learn)
-		- Transformation (Normalization of data)
+		- Transformation (Data transformation is the process of changing the format, structure, or values of data(normalisation))
 		- Analysis (Learning phase)
 		- Interpretation and Evaluation (Validation of the results)
 	
+		script:
+			divided the project in phases:
+				1. Prepare the environment we will use: SOA( tools available, regarding code libraries available), list of the specifications
+				2. Work plan (agile method)
+				3. Programming:
+						-data collection (from the pdf) + creation of new datasets (if required)
+						-preprocessing data (maybe Scikit-learn?) 
+						-transformation (process of changing the format, structure, or values of data(normalisation))
+						-analysis (Learning phase)
+						-interpretation and evaluation (Validation of the results)
