@@ -2,11 +2,43 @@ Main points:
 	
 	- Intoduction: {Zakariae}
 		- Develop a ML solution able to produce accurate models of Transition using Computational Methods.
-		- Overview on the market analysis (give examples of companies/industries/research)
+		- Overview on the state of the art (give examples of companies/industries/research)
+
+		script: - The main goal of this project is to develop a Machine Learning Solution to tune the closure coefficients instead of 
+			using an experimental and statistical approach. The approach we have in mind currently might not be the best one given that
+			we are still not pretty clear on all the technical constraints, however, in this presentation, we will give what we think
+			for now is the most suitable approach. We're also going to talk about the group formulation and the role of each one of us.
+			and then finally present the high-level tasks that we have deemed pertinent for the moment.
+			- Overview on the state of the art: We have identified multiple documents that are relevant to the topic at hand (mostly research papers)
+			In general, there is a recent tendency to use Machine Learning in Computational Fluid Dynamics to replace computationally expensive methods.
+			These Data-Driven methods have proved to be more efficient and provide more accuracy. Many organizations and universities are doing research
+			in this area, especially for Turbulence Models. As far as now, the results are promising but still require more research. 
 
 	- Group formulation:
 		- Compatiblity of personalities: (INTJ) Zakariae, Salman (INTJ), Antonin (ISTJ), Marvellous (ENFJ)
 		- SkillsMatrices: We make a complement team with potential synergy (go in depth)
+
+		script: - Considering our types of personalities, we thought we would make a good team for multiple reasons:
+			We have two INTJs, basically 2 masterminds that are good at setting strategies and problem-sovlers. We tend 
+			to see possiblities for improvement and innovation, consequently, 2 INTJs in the same group must be a really
+			good match and one can push the other to further thinking. We also think that it would keep the team intellectually 
+			stimulated.
+			The third member is ISTJ, called also Inspector. He's more driven to enforce order and organization which is a good match
+			considering that we have 2 INTJs and due to their perfectionism, they tend to spend too much time on certain tasks, which
+			is not always good for the project. Therefore, an inspector to remind the group of the deadlines and to enforce good time 
+			management is perfect for the team.
+			The fourth member is ENFJ, also called ENFJ. They are good organizers, much like ISTJ but tend to be more extraverted and 
+			charismatic. A member like that is really good for the team to keep the spirits up since INTJs and ISTJs tend to be a bit 
+			too serious. an ENFJ can motivate the group to be more productive.
+
+			- Skills Matrices: The group was also formed while taking into account the skills matrices. We have noticed that each one of us
+			compensates another member's weaknesses. For example, not all member feel comfortable with writing long reports and documentation
+			whereas others are more comfortable with it and might even enjoy it. Another example is the coding tasks, some of us are good at
+			programming whereas others are less comfortable with it, so obviously the ones that are good will focus on coding tasks while the 
+			others can do progess in other aspects of the project. 
+
+	 
+	
 
 	- Solution approach: {Salman}
 		- Tree diagram representing to possible approaches (ML or DL) and proceed with elimination based on feasability

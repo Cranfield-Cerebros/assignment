@@ -1,0 +1,15 @@
+- keywords: binary classifiers - Galilean invariance - Group Theory
+- The goal of the study presented in the document is the turbulence uncertainty quantification: predict when RANS 
+	has high uncertainty based on when specific model assumptions are violated
+
+
+- (for the project) A good approach would be to find a database that has both DNS and RANS results available (for some NACA models for example)
+- Classifiers used: Adaboost DT, Random Forest, SVM
+- results: 3x more accurate error detection
+- (for the project) we can use rule extraction to understand how our program works
+
+-Deep Learning for Turbulence Modelling: They used a Deep Neural Network 
+- Embedding Galilean Invariance in a NN consists of using an additional Tensor Input Layer that is to be merged with the final layer to give the output layer.
+- Tools used: Lasagne library for implementation - Bayesian optimisation to tune hyper-parameters
+- Results: the Tensor Based Neural Network is more perfromant in all cases
+	- Significantly improved Reynolds stress anisotropy predictions

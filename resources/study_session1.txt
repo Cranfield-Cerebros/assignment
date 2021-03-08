@@ -46,6 +46,7 @@ Documents for future study:
 	Introduction to Machine Learning [https://www.researchgate.net/publication/268804320_Introducing_Machine_Learning]
 	Machine Learning for Fluid Mechanics [https://www.researchgate.net/publication/335785608_Machine_Learning_for_Fluid_Mechanics]
 	Machine learning methods for turbulence modeling in subsonic flows around airfoils [https://aip.scitation.org/doi/10.1063/1.5061693]
+	Machine Learning in Computational Fluid Dynamics [https://towardsdatascience.com/machine-learning-in-computational-fluid-dynamics-7018941414b9]
 	Validation_of_CFD_Turbulence_Models_for [/documents]
 	SciANN_A_Keras_TensorFlow_wrapper_for_scientific_computationsand_physics-informed_deep_learning_usin [/documents]
 	Machine learning methods for turbulence [/documents]
@@ -67,6 +68,7 @@ Questions/answers:
 	If we change the reynolds number, ten we have to copy the correct mesh into the constant directory. 
 	As a sanity check, after each simulation we can check if the maximum yplus value reported is below 1 
 	(either on the screen or inside the postProcessing/yPlus/ folder after the simulation has finished). If it is above 1, then we have probably used the wrong mesh
+    - Antonin: Market Analysis questions
 
 
 Useful links:
