@@ -1,0 +1,16 @@
+Paper Review:
+
+Machine learning methods for turbulence modeling in subsonic flows around airfoils
+
+
+In solving the CFD problem, two machines were made: the learning machine and surrogate machine. The learning machine includes the sample selection, model framework and parameter optimisation while the surrogate machine the derived model from the learning machine as well as other variables are included in the CFD solver. 
+
+Having a high Reynolds number implies a thin boundary layer and hence, there are bound to be outliers. Hence, dividing the flow field into different zones according to normal distance from the wall would prove beneficial. Although it is good to a certain extent, this method tends to give incomplete descriptions of errors.
+
+Increasing the number of neural layers are good to improve the modelling results, however, it increases the risk of over-fitting and low generalisation. 
+
+Increasing the number of grids tends to cause redundancies, hence, it is key to approximate the original sample by less but more representative samples. 
+
+Other methods of optimisation include: gradient descent (GD), orthogonal least square, recurrent least square, etc. 
+
+CFL3D is a structure CFD code that can be used as the flow solver and also to validate the results. 
