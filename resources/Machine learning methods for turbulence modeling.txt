@@ -1,0 +1,12 @@
+Machine learning methods for turbulence modeling in subsonic flows over airfoils
+
+Results calculated by Spallart-Allmaras (original model)
+Use of RBFNN (radial basis function neural network) to model eddy viscosity
+high reynolds -> thin boundary layer -> gradient & data range large
+ -> separate the flow in different zones from the wall
+ => reduces error near wall (still present though) + model parameters can be adapted in each zone (for example number of hidden neurons)
+
+More hidden layers <=> improve modeling results but risks of overfitting and  low generalization
+
+Learning ratios set to 0.01
+K-means clustering used to divide the dataset into subsets
