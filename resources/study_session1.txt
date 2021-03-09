@@ -51,6 +51,7 @@ Documents for future study:
 	1- (Antonin) Machine learning methods for turbulence [/documents]
 	1- (Zakariae) Machine Learning for Turbulence Modeling [/documents]
 	3- A_TensorFlow-based_new_high-performance_computational_framework_for_CFD [/documents]
+	1- Deep Neuroevolution: Genetic Algorithms are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning — Paper Summary[https://towardsdatascience.com/deep-neuroevolution-genetic-algorithms-are-a-competitive-alternative-for-training-deep-neural-822bfe3291f5]
 
 Questions/answers:
     - Antonin & Marvellous: Would we have enough data to train our model and was it collected accurately (preprocessing step)? 
