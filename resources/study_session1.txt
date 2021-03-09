@@ -68,6 +68,7 @@ Questions/answers:
 	As a sanity check, after each simulation we can check if the maximum yplus value reported is below 1 
 	(either on the screen or inside the postProcessing/yPlus/ folder after the simulation has finished). If it is above 1, then we have probably used the wrong mesh
     - Antonin: Market Analysis questions
+    - Zakariae/Antonin: How are the drag and lift coefficients relevant to our study? Do we have to run a simulation for each iteration of the machine learning phase?
 
 
 Useful links:
