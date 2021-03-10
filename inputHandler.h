@@ -8,7 +8,8 @@
 FILE* accessAFile(char* path, char* mode);
 
 
-//1st: file descriptor, 2nd: its path, 3rd: value to modify, 4th: new value 
+//1st: file descriptor, 2nd: its path, 3rd: value to modify, 4th: new value
+//!\\ close the given file descriptor at the end 
 void modifyAField(FILE* fd, char* path, char* fieldName, double value);
 
 

@@ -7,7 +7,8 @@ FILE* accessAFile(char* path, char* mode){
     FILE* fd = fopen(path, mode);
 
     if (fd == NULL) {
-        perror("Failed to open the file %s", path);
+        char* errMsg = strcat("Failed to open the file ", path);
+        perror(errMsg);
         exit(-1);
     }
     return fd;
@@ -21,12 +22,12 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
 
     double currentValue;
     char currentFieldName[256];
-    char line[256]
+    char line[256];
 
-    while(!feof(fd)){
+    while (!feof(fd)){
         fscanf(fd, "%s %f", currentFieldName, &currentValue);
 
-        strcpy(str, "\0");
+        strcpy(line, "\0");
         fgets(line, LENGTH, fd);
 
         if (strcmp(currentFieldName, fieldName) == 0) {
