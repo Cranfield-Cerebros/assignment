@@ -25,6 +25,8 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
 
     while(!feof(fd)){
         fscanf(fd, "%s %f", currentFieldName, &currentValue);
+
+        strcpy(str, "\0");
         fgets(line, LENGTH, fd);
 
         if (strcmp(currentFieldName, fieldName) == 0) {
