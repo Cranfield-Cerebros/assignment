@@ -34,7 +34,7 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
 
         if (strncmp(line, fieldName, lenFieldName) == 0) {
 
-            fprintf(fdTemp, "%-*s %f;\n", 15, fieldName, value); //16-1 (because space in the format string)
+            fprintf(fdTemp, "%-*s %g;\n", 15, fieldName, value); //16-1 (because space in the format string)
 
         } else {
 
@@ -43,14 +43,14 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
         }
 
     }
-    /*
+
     if (remove(path) == 0){
         fprintf(stderr, "Failed to remove the file parameters.txt\n");
     }
 
     if (rename(tempPath, path) == 0){
         fprintf(stderr, "Failed to rename the file temp.txt as parameters.txt\n");
-    }*/
+    }
 
     closeFile(fdTemp);
     closeFile(fd);
