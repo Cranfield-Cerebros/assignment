@@ -21,17 +21,17 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
     char tempPath[] = "temp.txt";
     FILE* fdTemp = accessAFile(tempPath, "w");
 
-    double currentValue;
-    char currentFieldName[256];
+    int lenFieldName = strlen(fieldName);
     char line[256];
 
     while (!feof(fd)){
 
         fgets(line, LENGTH, fd);
 
-        if (strncmp(line, fieldName, strlen(fieldName)) == 0) {
+        if (strncmp(line, fieldName, lenFieldName) == 0) {
 
-            fprintf(fdTemp, "%s %f;\n", fieldName, value);
+            char spaces[16 - lenFieldName];
+            fprintf(fdTemp, "%s%s%f;\n", fieldName, spaces, value);
 
         } else {
 
