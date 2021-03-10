@@ -44,6 +44,9 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
 
     }
 
+    closeFile(fdTemp);
+    closeFile(fd);
+
     if (remove(path) == -1){
         printf("Failed to remove the file parameters.txt. %s\n", strerror(errno));
     }
@@ -52,6 +55,4 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
         printf("Failed to rename the file temp.txt as parameters.txt. %s\n", strerror(errno));
     }
 
-    closeFile(fdTemp);
-    closeFile(fd);
 }

@@ -21,7 +21,7 @@ nu              1e-6;
 AOA             15.0;
 
 // closure coefficient
-alphaK1         0.85;
+alphaK1         0.86;
 alphaK2         1;
 alphaOmega1     0.5;
 alphaOmega2     0.856;
