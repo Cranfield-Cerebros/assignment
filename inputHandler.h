@@ -7,7 +7,9 @@
 //mode: "r"->read, "w"->write...
 FILE* accessAFile(char* path, char* mode);
 
-void modifyAField(FILE* fd, char* fieldName, double value);
+
+//1st: file descriptor, 2nd: its path, 3rd: value to modify, 4th: new value 
+void modifyAField(FILE* fd, char* path, char* fieldName, double value);
 
 
 
