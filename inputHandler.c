@@ -44,12 +44,12 @@ void modifyAField(FILE* fd, char* path, char* fieldName, double value){
 
     }
 
-    if (remove(path) == 0){
-        fprintf(stderr, "Failed to remove the file parameters.txt\n");
+    if (remove(path) == -1){
+        printf("Failed to remove the file parameters.txt. %s\n", strerror(errno));
     }
 
-    if (rename(tempPath, path) == 0){
-        fprintf(stderr, "Failed to rename the file temp.txt as parameters.txt\n");
+    if (rename(tempPath, path) == -1){
+        printf("Failed to rename the file temp.txt as parameters.txt. %s\n", strerror(errno));
     }
 
     closeFile(fdTemp);
