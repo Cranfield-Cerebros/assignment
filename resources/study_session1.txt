@@ -71,6 +71,7 @@ Questions/answers:
     - Antonin: Market Analysis questions
     - Zakariae/Antonin: How are the drag and lift coefficients relevant to our study? Do we have to run a simulation for each iteration of the machine learning phase?
     - Zakariae: Considering the current number of meshes, we can't parallalize it using OpenMPI. Are we going to be provided with other meshes?
+    - Zakariae/Antonin: What is the point in restarting the simulation from previous results? (from the same last timestamp)
 
 Useful links:
   Machine Learning for fluid dynamics [https://www.youtube.com/watch?v=8e3OT2K99Kw]
